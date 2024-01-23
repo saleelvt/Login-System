@@ -1,0 +1,34 @@
+ 
+ body{
+   background-image: url('/assets/home.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+   
+ }
+ .center-div{
+
+    padding-top: 10%;
+ }
+ .btn.btn-success{
+   padding:10px 1em;
+ }
+ form{
+   padding:02em
+ }
+ #reg{
+  font-size: x-small;
+  margin-left: -90px;
+ }
+ #log{
+
+  font-size: x-small;
+
+ }
+ #login{
+ margin-top:-10px ;
+ 
+ }
+ #sl{
+  margin-top: -20px;
+ }

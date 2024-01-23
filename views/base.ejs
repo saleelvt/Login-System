@@ -1,0 +1,49 @@
+<%- include('header')-%>
+
+f
+
+    <div class="text-center center-div" id="login">
+
+        <div class="container w-25 border py-5" id="sl">
+
+            <div class="title pb-2" id="title">
+                <h2 class="font-weight-bold" id="login" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Login system </h2>
+                <span id="log">Log in for the existing user </span>
+               <% if(locals.logout){%>   
+                <div class="alter alert-success text-center">
+                    <%=logout%>
+                </div>
+                <%}%>
+                
+
+            </div>
+            <form action="/login" method="POST" class="pt-3">
+
+                <div class="form-group">
+                   <input type="email" class="form-control" placeholder="email" name="email">
+                   <small class="form-text text-muted text-center " id="reg"> register email address</small>
+                </div>
+                <div class="form-group">
+              <input type="password" class="form-control" name="password"placeholder="password"> 
+
+              <br>
+              <% if(locals.Inputs){%>   
+                <div class="alter alert-success text-center">
+
+                    <%=Inputs%>
+                </div>
+                <%}%>
+              <button type="submit" class="btn btn-success mt-3 " style="color: rgb(0, 0, 0);"> Submit</button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <%- include('footer')-%>
